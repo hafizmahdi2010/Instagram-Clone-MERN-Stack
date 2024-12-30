@@ -1,0 +1,60 @@
+body{
+  background-color: #000000;
+  color: #fff;
+}
+
+:root{
+  --input-bg: #121212;
+  --btn-bg: #3797EF;
+  --second-bg: #121212;
+  --border-color: #27272a;
+}
+
+.inputBox{
+  display: flex;
+  border-radius: 5px;
+  background-color: var(--input-bg);
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.inputBox input{
+  flex: 1;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.inputBox textarea{
+  flex: 1;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  min-height: 40vh;
+  resize: vertical;
+  border: none;
+  outline: none;
+}
+
+.btnNormal{
+  background-color: var(--btn-bg);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.topUsers::-webkit-scrollbar{
+  display: none;
+}
+
+.posts{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  padding: 0px 5px;
+  place-items: center;
+}
